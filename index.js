@@ -10,7 +10,20 @@
 // mysteryFunc(513515) ➞ "151113151115"
 
 function mysteryFunc(n) {
+  let result = '';
   // Write your code here
+  const string = n.toString();
+  let count = 1;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i+1] && string[i] === string[i+1]) count++;
+    else {
+      count = count.toString();
+      result += count;
+      result += string[i];
+      count = 1;
+    }
+  }
+  return result;
   
 }
 
