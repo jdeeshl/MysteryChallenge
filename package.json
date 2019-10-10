@@ -1,0 +1,25 @@
+{
+  "name": "mysterychallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dynoalot/MysteryChallenge.git"
+  },
+  "author": "Andre DiFelice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dynoalot/MysteryChallenge/issues"
+  },
+  "homepage": "https://github.com/dynoalot/MysteryChallenge#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.1.0",
+    "gulp": "^4.0.2",
+    "mocha": "^6.2.0"
+  }
+}
