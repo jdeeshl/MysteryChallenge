@@ -10,8 +10,16 @@
 // mysteryFunc(513515) ➞ "151113151115"
 
 function mysteryFunc(n) {
-  // Write your code here
-  
+  let result = '', counter = 1; 
+  n = n.toString()
+  for(i = 0; i < n.length; i++) {
+    if(n[i] == n[i+1]) counter++
+    else {
+      result += counter + n[i]
+      counter = 1
+    }
+  }
+  return result;
 }
 
 module.exports = mysteryFunc;
